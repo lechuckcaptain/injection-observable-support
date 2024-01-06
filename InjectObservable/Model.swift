@@ -5,10 +5,12 @@
 //  Created by Marco Pagliari on 2024/1/6.
 //
 
-import Foundation
+import Observation
 
-class Model: ObservableObject {
-    @Published var counter: Int = 0
+@Observable
+final class Model {
+    
+    var counter: Int = 0
     
     func increment() {
         counter += 1

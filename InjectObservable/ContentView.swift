@@ -12,7 +12,7 @@ struct ContentView: View {
     
     @ObserveInjection var redraw
     
-    @ObservedObject var model: Model
+    @Bindable var model: Model
     
     var body: some View {
         VStack {
