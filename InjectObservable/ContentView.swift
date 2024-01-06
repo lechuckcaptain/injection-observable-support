@@ -6,8 +6,11 @@
 //
 
 import SwiftUI
+import HotSwiftUI
 
 struct ContentView: View {
+    
+    @ObserveInjection var redraw
     
     @ObservedObject var model: Model
     
@@ -28,6 +31,7 @@ struct ContentView: View {
             .background(.red)
         }
         .padding()
+        .eraseToAnyView()
     }
 }
 
